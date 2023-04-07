@@ -1,4 +1,4 @@
-[官网](https://nacos.io/zh-cn/docs/quick-start.html)
+﻿[官网](https://nacos.io/zh-cn/docs/quick-start.html)
 1. 预备环境准备 jdk8+  2C4g60g*3的机器配置
 2. 下载源码或者安装包
 ```commandline
