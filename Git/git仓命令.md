@@ -1,4 +1,5 @@
-
+### 命令
+```
 Git global setup
 Git config --global user.name "smypai1"
 Git config --global user.email "smypai@hotmail.com"
