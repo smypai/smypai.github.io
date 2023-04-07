@@ -1,4 +1,4 @@
-﻿### 一、命令来进行添加仓库：
+### 一、命令来进行添加仓库：
 1. 先添加第一个GitHub的仓库地址：
 `Git remote add origin https://github.com/huangge1199/my-blog.Git`
 2. 再添加gitee的仓库地址
