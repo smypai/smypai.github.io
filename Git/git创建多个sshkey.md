@@ -1,5 +1,5 @@
 ### 1. 创建多个SSH-Key，使用ssh-key生成公钥和私钥
-```
+```java
 # 生成ssh-key，~/:指的是C盘用户的地址，一般是C:\Users\Administrator\.ssh
 # 作为github使用
 ssh-keygen -t rsa -C "username@email.com" -f ~/.ssh/gitlab_id_rsa
@@ -11,7 +11,7 @@ ssh-keygen -t rsa -C "username1@email.com" -f ~/.ssh/gitlab_id_rsa
 * ssh key生成了如下两个文件，一个id_rsa私钥，一个id_rsa.pub公钥
 ### 3. 使用ssh-add添加私钥 
 因为Git默认使用id_rsa，我们需要将密钥添加进去，同时配置config，作用是告知Git，让Git根据不同的域名选择不同的私钥
-```
+```java
 # 右键打开Git Base Here
 ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/gs_rsa
@@ -44,7 +44,7 @@ User a@b.com
 
 
 ### 4. 使用以下命令分别测试GitHub和Gitee，查看SSH Key是否添加成功。
-```
+```java
 ssh -T Git@gitee.com
 ssh -T Git@github.com
 ```

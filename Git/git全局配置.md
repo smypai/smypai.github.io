@@ -1,4 +1,4 @@
-```
+```java
 #查看全局配置 主要看user.name user.email user.password
 Git config --list
 

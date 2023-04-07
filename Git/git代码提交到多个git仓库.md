@@ -9,7 +9,7 @@
 `Git push origin master -f`
 
 ### 二、直接修改项目目录下隐藏目录.git中的config文件，在[remote “origin”]中添加多个仓库地址就可以了，参考如下：
-```
+```java
 [remote "origin"]
 url = https://gitee.com/huangge1199_admin/my-blog.Git
 fetch = +refs/heads/*:refs/remotes/origin/*
