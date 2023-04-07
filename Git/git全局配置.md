@@ -1,4 +1,4 @@
-```java
+
 #查看全局配置 主要看user.name user.email user.password
 Git config --list
 
@@ -18,4 +18,4 @@ Git config --global user.password
 # 设置提交的用户名和邮箱名称。
 Git config user.name "gs_userName"
 Git config user.email "gs_userName@email.com"
-```
+

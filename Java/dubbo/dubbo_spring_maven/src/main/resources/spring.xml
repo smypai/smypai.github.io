@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!--spring -->
+    <context:component-scan base-package="com.lenovo.service"/>
+    <context:annotation-config />
+
+    <!--dubbo-->
+    <dubbo:application name="hello-service" owner="test_1"/>
+    <dubbo:registry address="zookeeper://10.96.178.21:2181"/>
+    <dubbo:protocol port="-1" name="dubbo"/>
+    <dubbo:monitor protocol="registry"/>
+    <dubbo:service interface="com.lenovo.service.HelloService" ref="helloService" />
+    <bean id="helloService" class="com.lenovo.service.impl.HelloServiceImpl" />
+
+</beans>
+

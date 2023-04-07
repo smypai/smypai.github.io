@@ -1,4 +1,4 @@
-```java
+
 Git global setup
 Git config --global user.name "smypai1"
 Git config --global user.email "smypai@hotmail.com"
@@ -23,4 +23,3 @@ Git remote rename origin old-origin
 Git remote add origin Git@gitlab.com:smypai1/wiki.Git
 Git push -u origin --all
 Git push -u origin --tags
-```
