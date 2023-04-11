@@ -42,3 +42,18 @@ sh shutdown.sh
 Windows
 shutdown.cmd
 ```
+
+
+6. 运行报错：
+61. Nacos Caused by:Cannot determine JNI library name for ARCH=‘x86‘ OS=‘windows 10‘ name=‘rocksdb‘
+请安装Nacos对应版本的 64位JDK 
+
+
+62. nacos2.2启动报错The specified key byte array is 16 bits which is not secure enough for any JWT HMAC-SHA
+conf/application.properties 
+nacos.core.auth.default.token.secret.key=SecretKey012345678901234567890123456789012345678901234567890123456789
+下面的是官网给出的解决方案。 自定义密钥 开启鉴权之后，你可以自定义用于生成JWT令牌的密钥，application.properties中的配置信息为：
+注意：
+文档中提供的密钥为公开密钥，在实际部署时请更换为其他密钥内容，防止密钥泄漏导致安全风险。
+在2.2.0.1版本后，社区发布版本将移除以文档如下值作为默认值，需要自行填充，否则无法启动节点。
+密钥需要保持节点间一致，长时间不一致可能导致403 invalid token错误。
