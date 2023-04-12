@@ -4,7 +4,7 @@
 2. 创建一个public仓库
 ![本地路径](https://smypai.github.io/photo/img_1.png "相对路径演示")
 3. 创建index.html文件
-```html
+```
 <!DOCTYPE html>
 <html>
 <head>
