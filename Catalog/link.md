@@ -15,8 +15,19 @@
 - [引入依赖](https://smypai.github.io/依赖管理/Gradle/引入依赖.html)
 - [引用本地Jar包](https://smypai.github.io/依赖管理/Gradle/Gradle引用本地Jar包.html)
 - [设置阿里镜像](https://smypai.github.io/依赖管理/Gradle/Gradle设置阿里镜像.html)
+- [错误问题收集](https://smypai.github.io/依赖管理/Gradle/错误问题收集.html)
+
 
 ### SpringBoot for redis
 - [整合redis](https://smypai.github.io/Java/SpringBoot/redis/springboot整合redis.html)
 - [配置文件](https://smypai.github.io/Java/SpringBoot/redis/配置文件.html)
 - [redis](https://smypai.github.io/Java/SpringBoot/redis/SpringBoot整合SpringDataRedis.html)
+
+### springBoot 
+- [SpringBoot中系统多环境配置](https://smypai.github.io/Java/SpringBoot/SpringBoot中系统多环境配置.md)
+
+### SpringBoot logging 
+- [SpringBootLogging](https://smypai.github.io/Java/SpringBoot/logging/SpringBootLogging.html)
+- [logback](https://smypai.github.io/Java\SpringBoot\logging\logback.md)
+
+
