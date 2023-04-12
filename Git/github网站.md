@@ -2,7 +2,7 @@
 
 1. 申请Github账号
 
-2. 创建一个public仓库  <br />
+2. 创建一个public仓库    <br />
 ![本地路径](https://smypai.github.io/photo/img_1.png "相对路径演示")
 
 3. 创建index.html文件,源码如下 <br />
