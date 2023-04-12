@@ -7,8 +7,8 @@ Create a new repository
 Git clone Git@gitlab.com:smypai1/wiki.Git
 cd wiki
 Git switch -c main
-touch README.md
-Git add README.md
+touch link.md
+Git add link.md
 Git commit -m "add README"
 Git push -u origin main
 Push an existing folder
