@@ -19,4 +19,4 @@
 ### SpringBoot for redis
 - [整合redis](https://smypai.github.io/Java/SpringBoot/redis/springboot整合redis.html)
 - [配置文件](https://smypai.github.io/Java/SpringBoot/redis/配置文件.html)
-- [redis](https://smypai.github.io/Java/SpringBoot/redis/SpringBoot整合SpringData Redis.html)
+- [redis](https://smypai.github.io/Java/SpringBoot/redis/SpringBoot整合SpringDataRedis.html)
