@@ -201,6 +201,7 @@ logging:
     com.caicai: debug
 ```
 - 2）编写配置类，定义日志级别
+
 ```java
 
 @Configuration
@@ -211,6 +212,8 @@ public class FeignConfig {
     }
 }
 ```
+
+
 - 这里指定的Level级别是FULL，Feign支持4种级别：
     - NONE：不记录任何日志信息，这是默认值。
     - BASIC：仅记录请求的方法，URL以及响应状态码和执行时间
