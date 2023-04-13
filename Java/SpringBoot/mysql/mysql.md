@@ -1,0 +1,28 @@
+SpringBoot框架之SpringBoot+MySQL使用案例入门
+一、添加依赖：
+```xml
+<!--集成mysql数据库-->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.38</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-jdbc</artifactId>
+</dependency>
+<!--lombok注解简化代码-->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+</dependency>
+```
+二、配置端口：
+在application.properties添加MySQL的端口，用户名密码跟url:
+```properties
+#集成mysql数据库的配置
+spring.datasource.driverClassName=com.mysql.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/bigdata?useSSL=false&useUnicode=true&characterEncoding=utf-8
+spring.datasource.username=root
+spring.datasource.password=root
+```
