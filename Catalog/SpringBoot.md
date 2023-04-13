@@ -17,3 +17,4 @@
 - [SpringBoot Feign](https://smypai.github.io/Java/SpringBoot/Feign/feign.html)
 - [SpringBoot 调用接口](https://smypai.github.io/Java/SpringBoot/调用接口/三种方式.html)
 - [SpringBoot 优雅的调用服务-Feign.md](https://smypai.github.io/Java/SpringBoot/Feign/优雅的调用服务-Feign.html)
+- [SpringBoot 优雅的调用服务-Feign.md](/Java/SpringBoot/Feign/优雅的调用服务-Feign.html)
