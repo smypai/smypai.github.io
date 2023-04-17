@@ -18,8 +18,9 @@
 - [错误问题收集](https://smypai.github.io/依赖管理/Gradle/错误问题收集.html)
 - [Gradle生成Jar的两种方式](https://smypai.github.io/依赖管理/Gradle/Gradle生成Jar的两种方式.md)
 
-### Java 基础
-- [项目代码结构](https://smypai.github.io/Java/Java基础/代码结构/项目代码结构.html)
+### Java 
+[Java 基础](/Catalog/Java/java.html)
+[Java 注解](Catalog/Java/注解.html)
 
 ### [SpringBoot 系列](https://smypai.github.io/Catalog/SpringBoot.html)
 
