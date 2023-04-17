@@ -20,7 +20,7 @@
 
 ### Java 
 [Java 基础](/Catalog/Java/java.html)
-[Java 注解](Catalog/Java/注解.html)
+[Java 注解](/Catalog/Java/注解.html)
 
 ### [SpringBoot 系列](https://smypai.github.io/Catalog/SpringBoot.html)
 
