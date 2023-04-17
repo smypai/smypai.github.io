@@ -1,11 +1,8 @@
 ## Springboot 3.0.0 整合swagger
+- Automated JSON API documentation for API's built with Spring   
 
-- Automated JSON API documentation for API's built with Spring
-
-
-
-1. 引入POM-
-```pom
+1. 引入POM   
+```yaml
 <dependencies>
     <!-- swagger 3.0.0 -->
     <dependency>
@@ -28,7 +25,7 @@
 </dependencies>
 ```
 
-2、配置类
+2、配置类   
 ```java
 @Configuration
 //@EnableSwagger2  // 老版本开启swagger
@@ -58,14 +55,14 @@ public class SwaggerConfig {
 
 ```
 - Swagger3.0——>注解：@EnableOpenApi
-- Swagger2.0——>注解：@EnableSwagger2
+- Swagger2.0——>注解：@EnableSwagger2   
 
 
-3. 访问地址 启动项目，访问swagger，访问地址：localhost:端口号/swagger-ui
+3. 访问地址 启动项目，访问swagger，访问地址：localhost:端口号/swagger-ui  
 - Swagger3.0——>测试地址：http://localhost:8080/swagger-ui/index.html
 - Swagger2.0——>测试地址：http://localhost:8080/swagger-ui.html
 
-4. 注解
+4. 注解  
 
 - @Api(tags = “xxx模块说明”)	作用在模块类上
 - @ApiOperation(“xxx接口说明”)	作用在接口方法上
@@ -73,8 +70,8 @@ public class SwaggerConfig {
 - @ApiModelProperty(value = “xxx属性说明”,hidden = true)	作用在类方法和属性上，hidden设置为true可以隐藏该属性
 - @ApiParam(“xxx参数说明”)	作用在参数、方法和字段上，类似@ApiModelProperty
 - @ApiModel("用户实体类")：用于实体类上，描述实体类
-- @ApiModelProperty(value = "用户名",hidden = false)：用于属性上描述实体类属性，hidden功能是，是否隐藏该属性
-```
+- @ApiModelProperty(value = "用户名",hidden = false)：用于属性上描述实体类属性，hidden功能是，是否隐藏该属性   
+```java
 @Api模块配置，用在Controller类上，描述Api接口@ApiOperation接口配置，用在方法上，描述接口方法
 @ApiParam方法参数配置，用在入参中或注解中@Apilgnore忽略此接口不生成文档
 @ApiModel用于类，表示对类进行说明，描述一个Model的信息
@@ -130,11 +127,7 @@ public class SwaggerConfig {
             请求参数无法使用@ApiImplicitParam注解进行描述的时候）
     @ApiModelProperty：用在属性上，描述响应类的属性
     
-```
 
-
-
-```java
 swagger2	swagger3	注解位置
 @Api(tags = “接口类描述”)	@Tag(tags = “接口类描述”)	Controller 类上
 @ApiOperation(“接口方法描述”)	@Operation(summary =“接口方法描述”)	Controller 方法上
@@ -145,8 +138,8 @@ swagger2	swagger3	注解位置
 @ApiModel(description = “dto类描述”)	@Schema(description = “dto类描述”)	DTO类上
 @ApiModelProperty(“属性描述”)	@Schema(description = “属性描述”)	DTO属性上
 ```
-
-6.Knife4j增强方案
+  
+6.Knife4j增强方案   
 ```yaml
 <dependency>
   <groupId>com.github.xiaoymin</groupId>

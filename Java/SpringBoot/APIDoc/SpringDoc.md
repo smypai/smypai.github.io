@@ -4,6 +4,7 @@
 - 官网地址：https://springdoc.org/v2/
 - 注意：使用的是V2版本，这个版本支持springboot3.0
 
+
 1. 引入依赖
 ```gradle
 implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
@@ -50,7 +51,7 @@ public class SwaggerConfig {
 ```
 4. 打开浏览器访问 http://localhost:8080/swagger-ui.html
 
-5. sprigdoc 注解使用， 从Springfox迁移过来的，需要修改注解：
+5. sprigdoc 注解使用， 从Springfox迁移过来的，需要修改注解：     
 ```java
 @Api → @Tag
 
@@ -91,7 +92,8 @@ public class SwaggerConfig {
    </dependency>
 ```
 
-7. 全面配置
+7. 全面配置    
+
 ```yaml
 
 springdoc:
