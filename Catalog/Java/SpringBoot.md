@@ -17,5 +17,5 @@
 - [SpringBoot 调用接口](/Java/SpringBoot/调用接口/三种方式.html)
 - [SpringBoot 优雅的调用服务-Feign.md](/Java/SpringBoot/Feign/优雅的调用服务-Feign.html)
 - [SpringBoot SpringDoc](/Java/SpringBoot/APIDoc/SpringDoc.html)
-- [SpringBiit Swagger](/Java/SpringBoot/APIDoc/Swagger.html)
+- [SpringBoot Swagger](/Java/SpringBoot/APIDoc/Swagger.html)
 - [SpringBoot 过滤器&拦截器与aop](/Java/SpringBoot/过滤器&拦截器与aop.html)

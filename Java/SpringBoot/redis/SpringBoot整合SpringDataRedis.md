@@ -54,10 +54,12 @@ public class RedisTest {
     }
 }
 ```
-### Operations：
+### Operations
  - redisTemplate有两个方法经常用到,
  - 一个是opsForXXX一个是boundXXXOps,XXX是value的类型,前者获取到一个Opercation,但是没有指定操作的key,可以在一个连接(事务)内操作多个key以及对应的value;
  - 后者会获取到一个指定了key的operation,在一个连接内只操作这个key对应的value
+
+
 ```java
 　　private RedisTemplate redisTemplate;
 　　ValueOperations valueOperations = redisTemplate.opsForValue();
