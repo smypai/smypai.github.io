@@ -60,7 +60,7 @@ public class RedisTest {
  - 后者会获取到一个指定了key的operation,在一个连接内只操作这个key对应的value
 
 
-```java
+```text
 　　private RedisTemplate redisTemplate;
 　　ValueOperations valueOperations = redisTemplate.opsForValue();
 　　　　ValueOperations ：简单字符串类型数据操作
