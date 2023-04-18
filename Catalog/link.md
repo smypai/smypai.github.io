@@ -21,7 +21,8 @@
 ### Java 
 [Java 基础](/Catalog/Java/java.html)
 [Java 注解](/Catalog/Java/注解.html)
+[Java 异步线程](/Catalog/Java/线程.md)
 
 ### [SpringBoot 系列](https://smypai.github.io/Catalog/SpringBoot.html)
 
-### [Spring 系列](/Catalog/Spring/Spring.html)
+### [Spring 系列](/Catalog/Java/Spring/Spring.html)
