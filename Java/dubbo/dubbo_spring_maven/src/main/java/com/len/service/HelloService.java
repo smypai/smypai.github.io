@@ -1,4 +1,4 @@
-package com.lenovo.service;
+package com.len.service;
 
 public interface HelloService {
 

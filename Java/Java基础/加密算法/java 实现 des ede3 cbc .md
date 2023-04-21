@@ -1,6 +1,6 @@
 ```java
 
-package org.lenovo.lc.ecommerces.utils;
+package org.len.lc.ecommerces.utils;
 
 import lombok.extern.slf4j.Slf4j;
 

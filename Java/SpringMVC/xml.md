@@ -82,5 +82,5 @@
 </web-app>
 
 <!-- applicationContext.xml -->
-    <context:component-scan base-package="com.lenovo"/>
+    <context:component-scan base-package="com.len"/>
     <mvc:annotation-driven/>

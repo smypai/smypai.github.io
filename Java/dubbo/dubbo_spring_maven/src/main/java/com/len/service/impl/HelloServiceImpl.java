@@ -1,6 +1,6 @@
-package com.lenovo.service.impl;
+package com.len.service.impl;
 
-import com.lenovo.service.HelloService;
+import com.len.service.HelloService;
 import org.springframework.stereotype.Service;
 
 @Service

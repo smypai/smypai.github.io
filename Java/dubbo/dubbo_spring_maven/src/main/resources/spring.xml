@@ -5,7 +5,7 @@
        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <!--spring -->
-    <context:component-scan base-package="com.lenovo.service"/>
+    <context:component-scan base-package="com.len.service"/>
     <context:annotation-config />
 
     <!--dubbo-->
@@ -13,8 +13,8 @@
     <dubbo:registry address="zookeeper://10.96.178.21:2181"/>
     <dubbo:protocol port="-1" name="dubbo"/>
     <dubbo:monitor protocol="registry"/>
-    <dubbo:service interface="com.lenovo.service.HelloService" ref="helloService" />
-    <bean id="helloService" class="com.lenovo.service.impl.HelloServiceImpl" />
+    <dubbo:service interface="com.len.service.HelloService" ref="helloService" />
+    <bean id="helloService" class="com.len.service.impl.HelloServiceImpl" />
 
 </beans>
 

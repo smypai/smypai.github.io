@@ -1,7 +1,7 @@
 ### Authorization
 
 ```java
-package com.lenovo.config;
+package com.len.config;
 
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
@@ -27,15 +27,15 @@ public class AuthAspect {
     @Value("${smbforbaiying.authorization}")
     private String authToken;
 
-    @Pointcut("execution(public * com.lenovo.controller.*.*(..))")
+    @Pointcut("execution(public * com.len.controller.*.*(..))")
     public void pointCut() {
     }
 
-    @Pointcut("execution(public * com.lenovo.controller.HelloController.*(..))")
+    @Pointcut("execution(public * com.len.controller.HelloController.*(..))")
     public void hell() {
     }
 
-    @Pointcut("execution(public * com.lenovo.controller.LenovoCallbackController.*(..))")
+    @Pointcut("execution(public * com.len.controller.CallbackController.*(..))")
     public void callback() {
     }
 

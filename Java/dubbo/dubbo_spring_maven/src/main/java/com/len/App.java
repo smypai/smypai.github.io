@@ -1,6 +1,6 @@
-package com.lenovo;
+package com.len;
 
-import com.lenovo.service.HelloService;
+import com.len.service.HelloService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

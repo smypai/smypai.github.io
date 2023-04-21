@@ -1,4 +1,4 @@
-package com.lenovo;
+package com.len;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
