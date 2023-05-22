@@ -21,19 +21,17 @@
 
 ##### JDK 下载：
 
+* https://jdk.java.net/  
+* https://openjdk.org/
+* https://mirrors.tuna.tsinghua.edu.cn/Adoptium/
+* https://wiki.openjdk.org/display/jdk8u/Main
 *   oracle jdk <https://www.oracle.com/java/technologies/javase-downloads.html>
-
 *   OpenJDK <https://openjdk.java.net/>
-
 *   <https://jdk.java.net/archive/>
-
 *   <https://www.oracle.com/java/technologies/downloads/#jdk17-windows>
-
 *   JDK For Windows <https://developers.redhat.com/products/openjdk/download?sc_cid=701f2000000RWTnAAO>
-
 *   Oralc JDK <https://www.oracle.com/technetwork/java/javase/downloads/index.html>
-
-<https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396>
+* <https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396>
 
 ##### fedora Install JDK
 
@@ -52,6 +50,7 @@ dnf install java-11-openjdk-level      javac
     <http://idea-intellij.com/intellij-eap/>
 
 #### install jdk  env
+
 ```
 变量名：JAVA_HOME
 变量值：C:\Program Files (x86)\Java\jdk1.8.0_91        // 要根据自己的实际路径配置
@@ -60,3 +59,4 @@ dnf install java-11-openjdk-level      javac
 变量名：Path
 变量值：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
 ```
+

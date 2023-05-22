@@ -1,2 +1,3 @@
 - [项目代码结构](https://smypai.github.io/Java/Java基础/代码结构/项目代码结构.html)
 - [设计模式](/Java/设计模式/Index.html)
+- [JDK 安装](/Java/Java基础/JDK/jdk.html)
