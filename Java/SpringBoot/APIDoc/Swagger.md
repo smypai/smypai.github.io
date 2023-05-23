@@ -26,7 +26,7 @@
 ```
 
 2、配置类   
-```java
+```text
 @Configuration
 //@EnableSwagger2  // 老版本开启swagger
 //@EnableOpenApi   // 网上搜到的解决报错添加的
@@ -45,9 +45,11 @@ public class SwaggerConfig {
         //docket对象用于封装接口文档相关信息
         Docket docket = new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo)
+                .enable(true)   //开启swagger
                 .groupName("用户接口组")
-                .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.xf.swagger.controller"))
+                .select() //选择哪个类型的Controller生成文档
+                .apis(RequestHandlerSelectors.basePackage("org.lenovo.lc.ecommerces.controller")) //扫描包
+                .paths(PathSelectors.any()) //匹配任何请求路径
                 .build();
         return docket;
     }
@@ -71,7 +73,9 @@ public class SwaggerConfig {
 - @ApiParam(“xxx参数说明”)	作用在参数、方法和字段上，类似@ApiModelProperty
 - @ApiModel("用户实体类")：用于实体类上，描述实体类
 - @ApiModelProperty(value = "用户名",hidden = false)：用于属性上描述实体类属性，hidden功能是，是否隐藏该属性   
-```java
+
+```text
+
 @Api模块配置，用在Controller类上，描述Api接口@ApiOperation接口配置，用在方法上，描述接口方法
 @ApiParam方法参数配置，用在入参中或注解中@Apilgnore忽略此接口不生成文档
 @ApiModel用于类，表示对类进行说明，描述一个Model的信息
@@ -88,7 +92,6 @@ public class SwaggerConfig {
 @ApiImplicitParam用来注解来给方法入参增加说明
 @ApiResponses用于表示一组响应结果
 @ApiResponse用在@ApiResponses中，一般用于表达一个错误的响应信息
-
 
 @Api：用在请求的类上，表示对类的说明
     tags="说明该类的作用，可以在UI界面上看到的注解"
@@ -140,7 +143,9 @@ swagger2	swagger3	注解位置
 ```
   
 6.Knife4j增强方案   
+
 ```yaml
+
 <dependency>
   <groupId>com.github.xiaoymin</groupId>
   <artifactId>knife4j-spring-boot-starter</artifactId>
@@ -151,4 +156,24 @@ swagger2	swagger3	注解位置
 @EnableKnife4j//该注解是knife4j提供的增强注解,Ui提供了例如动态参数、参数过滤、接口排序等增强功能,如果你想使用这些增强功能就必须加该注解，否则可以不用加
 # 访问地址
 http://host:port/doc.html
+
+```
+
+7. SpringMVC 拦截器
+
+```xml
+
+<mvc:interceptors>
+    <mvc:interceptor>
+        <mvc:mapping path="/**"/>
+        <!--swagger-->
+        <mvc:exclude-mapping path="/swagger-resources/**"/>
+        <mvc:exclude-mapping path="/swagger-ui/**"/>
+        <mvc:exclude-mapping path="/v2/**"/>
+        <mvc:exclude-mapping path="/error"/>
+        <!--拦截器-->
+        <bean class="org.ecommerces.intercepter.LoginInterceptor"/>
+    </mvc:interceptor>
+</mvc:interceptors>
+
 ```
