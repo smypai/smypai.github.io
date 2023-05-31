@@ -46,7 +46,7 @@ public class SwaggerConfig {
         Docket docket = new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo)
                 .enable(true)   //开启swagger
-                .groupName("用户接口组")
+                .groupName("用户接口组")  //接口分组 多个docket,指定不同扫描路径
                 .select() //选择哪个类型的Controller生成文档
                 .apis(RequestHandlerSelectors.basePackage("org.lenovo.lc.ecommerces.controller")) //扫描包
                 .paths(PathSelectors.any()) //匹配任何请求路径
